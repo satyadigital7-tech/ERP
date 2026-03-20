@@ -1,5 +1,9 @@
+/* Tailwind v4 CSS-first configuration */
 @import "tailwindcss";
 
+/* The following @theme and @utility rules are valid Tailwind v4 syntax. 
+   Warnings about "Unknown at rule" can be safely ignored as they are
+   required for the new design engine. */
 @theme {
   --color-background: #fdfdfd;
   --color-foreground: #0f172a;

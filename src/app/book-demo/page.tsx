@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/Button";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
-  Calendar, Clock, CheckCircle2, Video, Building, User, Mail, Phone, Crown, ShieldCheck, Zap, Trophy, Building2
+  Calendar, Clock, CheckCircle2, Video, Building, User, Mail, Phone, Crown, ShieldCheck, Zap, Trophy, Building2, Star
 } from "lucide-react";
 
 const BookDemoPage = () => {

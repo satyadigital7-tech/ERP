@@ -7,6 +7,7 @@ import { motion, AnimatePresence, HTMLMotionProps } from "framer-motion";
 interface ButtonProps extends Omit<HTMLMotionProps<"button">, "variant" | "onAnimationStart" | "onDrag" | "onDragStart" | "onDragEnd"> {
   variant?: "primary" | "secondary" | "outline" | "ghost" | "gold";
   size?: "sm" | "md" | "lg";
+  children?: React.ReactNode;
 }
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
