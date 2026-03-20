@@ -9,49 +9,25 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#ffffff",
-        foreground: "#1e293b",
+        background: "var(--background)",
+        foreground: "var(--foreground)",
         primary: {
-          DEFAULT: "#ef4444", // Rich Crimson
-          dark: "#dc2626",
-          foreground: "#ffffff",
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
-          DEFAULT: "#fbbf24", // Metallic Gold
-          dark: "#f59e0b",
-          foreground: "#1e293b",
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
         },
         accent: {
-          DEFAULT: "#1d4ed8", // Deep Sapphire
-          dark: "#1e3a8a",
-          foreground: "#ffffff",
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
         },
-        success: "#14b8a6", // Vibrant Teal
       },
-      borderRadius: {
-        "3xl": "2.5rem",
-      },
-      animation: {
-        float: "float 6s ease-in-out infinite",
-        orb: "orb 20s linear infinite",
-        shimmer: "shimmer 3s linear infinite",
-      },
-      keyframes: {
-        float: {
-          "0%": { transform: "translateY(0px) rotate(0deg)" },
-          "50%": { transform: "translateY(-12px) rotate(2deg)" },
-          "100%": { transform: "translateY(0px) rotate(0deg)" },
-        },
-        orb: {
-          "0%": { transform: "translate(0, 0) scale(1)" },
-          "33%": { transform: "translate(30px, -50px) scale(1.1)" },
-          "66%": { transform: "translate(-20px, 20px) scale(0.9)" },
-          "100%": { transform: "translate(0, 0) scale(1)" },
-        },
-        shimmer: {
-          "0%": { backgroundPosition: "200% 0" },
-          "100%": { backgroundPosition: "-200% 0" },
-        },
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
   },

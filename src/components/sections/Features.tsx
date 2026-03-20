@@ -12,7 +12,7 @@ const features = [
     icon: <Users className="w-8 h-8" />,
     title: "Student Information (SIS)",
     desc: "360° student lifecycle tracking with biometric enrollment and academic archiving.",
-    color: "sapphire",
+    color: "crimson",
     href: "/features/student-management"
   },
   {

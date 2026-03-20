@@ -14,7 +14,7 @@ const steps = [
     icon: <Monitor className="w-6 h-6 text-white" />,
     title: "Unified Command",
     desc: "Control every administrative node from a single, high-fidelity dashboard.",
-    bg: "bg-accent"
+    bg: "bg-slate-900"
   },
   {
     icon: <Building2 className="w-6 h-6 text-white" />,

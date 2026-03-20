@@ -39,7 +39,7 @@ const Hero = () => {
           </motion.div>
           
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-slate-900 leading-tight mb-8 tracking-tighter pb-2 capitalize">
-            The Digital <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-secondary italic px-2">Nerve Center</span> of Excellence
+            The Digital <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary via-red-500 to-secondary italic px-2">Nerve Center</span> of Excellence
           </h1>
           
           <p className="text-xl lg:text-2xl text-slate-500 mb-10 leading-relaxed max-w-2xl mx-auto font-medium tracking-tight">

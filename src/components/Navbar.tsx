@@ -46,7 +46,7 @@ const Navbar = () => {
         <Link href="/" className="flex items-center gap-2 group">
           <motion.div 
             whileHover={{ rotate: 15, scale: 1.1 }}
-            className="bg-gradient-to-br from-primary to-blue-900 p-2 rounded-xl shadow-lg border border-white/20"
+            className="bg-gradient-to-br from-primary to-slate-900 p-2 rounded-xl shadow-lg border border-white/20"
           >
             <GraduationCap className="text-white w-6 h-6" />
           </motion.div>

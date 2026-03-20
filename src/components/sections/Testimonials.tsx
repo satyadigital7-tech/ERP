@@ -23,7 +23,7 @@ const testimonials = [
     role: "Director, Green Valley Elite",
     content: "Our fee liquidity improved by 70% within the first quarter. The automated luxury experience for parents has built immense institutional trust.",
     avatar: "A",
-    accent: "bg-accent"
+    accent: "bg-slate-900"
   }
 ];
 
