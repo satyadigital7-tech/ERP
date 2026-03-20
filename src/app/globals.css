@@ -1,42 +1,19 @@
-/* Tailwind v4 CSS-first configuration */
 @import "tailwindcss";
 
-/* The following @theme and @utility rules are valid Tailwind v4 syntax. 
-   Warnings about "Unknown at rule" can be safely ignored as they are
-   required for the new design engine. */
-@theme {
-  --color-background: #fdfdfd;
-  --color-foreground: #0f172a;
-  --color-primary: #dc2626; /* Crimson Red */
-  --color-primary-foreground: #ffffff;
-  --color-secondary: #f59e0b; /* Metallic Gold */
-  --color-secondary-foreground: #1e293b;
-  --color-accent: #1e3a8a; /* Deep Sapphire */
-  --color-accent-foreground: #ffffff;
-  --color-success: #14b8a6; /* Vibrant Teal */
-  
-  --radius-xl: 1rem;
-  --radius-2xl: 1.5rem;
-  --radius-3xl: 2.5rem;
-  
-  --animate-float: float 6s ease-in-out infinite;
-  --animate-orb: orb 20s linear infinite;
+/* 
+  Global Institutional Styles
+  Theme is managed in tailwind.config.ts to resolve IDE warnings.
+*/
 
-  @keyframes float {
-    0% { transform: translateY(0px) rotate(0deg); }
-    50% { transform: translateY(-12px) rotate(2deg); }
-    100% { transform: translateY(0px) rotate(0deg); }
-  }
-
-  @keyframes orb {
-    0% { transform: translate(0, 0) scale(1); }
-    33% { transform: translate(30px, -50px) scale(1.1); }
-    66% { transform: translate(-20px, 20px) scale(0.9); }
-    100% { transform: translate(0, 0) scale(1); }
-  }
+body {
+  background-color: #fdfdfd;
+  color: #0f172a;
+  overflow-x: hidden;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
-@utility neumorphic {
+/* Custom Design System Components */
+.neumorphic {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.8) 100%);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -46,14 +23,30 @@
     inset 2px 2px 5px rgba(255, 255, 255, 0.5);
 }
 
-@utility crimson-glow {
+.crimson-glow {
   box-shadow: 0 0 20px rgba(220, 38, 38, 0.2);
 }
 
-@utility gold-shimmer {
+.gold-shimmer {
   background: linear-gradient(90deg, #f59e0b 0%, #fbbf24 50%, #f59e0b 100%);
   background-size: 200% 100%;
   animation: shimmer 3s linear infinite;
+}
+
+.orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(120px);
+  opacity: 0.2;
+  animation: orb 20s linear infinite;
+  mix-blend-mode: multiply;
+}
+
+@keyframes orb {
+  0% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+  100% { transform: translate(0, 0) scale(1); }
 }
 
 @keyframes shimmer {
@@ -61,15 +54,8 @@
   100% { background-position: -200% 0; }
 }
 
-@layer base {
-  body {
-    @apply bg-background text-foreground overflow-x-hidden;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  }
-}
-
-@layer utilities {
-  .orb {
-    @apply absolute rounded-full blur-[120px] opacity-20 animate-orb mix-blend-multiply;
-  }
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(2deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
 }
