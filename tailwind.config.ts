@@ -12,18 +12,21 @@ const config: Config = {
         background: "#ffffff",
         foreground: "#1e293b",
         primary: {
-          DEFAULT: "#1e40af", // Royal Blue
+          DEFAULT: "#ef4444", // Rich Crimson
+          dark: "#dc2626",
           foreground: "#ffffff",
         },
         secondary: {
-          DEFAULT: "#f59e0b", // Gold
+          DEFAULT: "#fbbf24", // Metallic Gold
+          dark: "#f59e0b",
           foreground: "#1e293b",
         },
         accent: {
-          DEFAULT: "#334155", // Slate 700
+          DEFAULT: "#1d4ed8", // Deep Sapphire
+          dark: "#1e3a8a",
           foreground: "#ffffff",
         },
-        success: "#10b981",
+        success: "#14b8a6", // Vibrant Teal
       },
       borderRadius: {
         "3xl": "2.5rem",

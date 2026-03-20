@@ -15,9 +15,9 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     const [isClicked, setIsClicked] = useState(false);
 
     const variants = {
-      primary: "bg-gradient-to-r from-primary to-blue-800 text-white navy-glow border border-white/20",
-      gold: "gold-shimmer text-slate-900 font-bold shadow-xl shadow-amber-500/20 border border-white/40",
-      secondary: "neumorphic text-gray-900 border border-white/40",
+      primary: "bg-gradient-to-r from-primary to-primary-dark text-white crimson-glow border border-white/20",
+      gold: "gold-shimmer text-slate-900 font-bold shadow-xl gold-glow border border-white/40",
+      secondary: "neumorphic text-accent font-bold border border-white/40 shadow-xl",
       outline: "bg-transparent border-2 border-primary text-primary hover:bg-primary/5",
       ghost: "hover:bg-gray-100 text-gray-700",
     };
