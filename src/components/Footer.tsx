@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
         <div className="space-y-8">
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="bg-gradient-to-br from-primary to-slate-900 p-2.5 rounded-xl shadow-lg border border-white/20">
+            <div className="bg-gradient-to-br from-primary to-blue-900 p-2.5 rounded-xl shadow-lg border border-white/20">
               <GraduationCap className="text-white w-6 h-6" />
             </div>
             <span className="text-2xl font-black text-slate-900">Edu<span className="text-primary tracking-tighter">ERP</span></span>
