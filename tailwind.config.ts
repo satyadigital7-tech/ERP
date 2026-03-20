@@ -9,21 +9,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#fdfdfd",
-        foreground: "#0f172a",
+        background: "#ffffff",
+        foreground: "#1e293b",
         primary: {
-          DEFAULT: "#dc2626",
+          DEFAULT: "#1e40af", // Royal Blue
           foreground: "#ffffff",
         },
         secondary: {
-          DEFAULT: "#f59e0b",
+          DEFAULT: "#f59e0b", // Gold
           foreground: "#1e293b",
         },
         accent: {
-          DEFAULT: "#1e3a8a",
+          DEFAULT: "#334155", // Slate 700
           foreground: "#ffffff",
         },
-        success: "#14b8a6",
+        success: "#10b981",
       },
       borderRadius: {
         "3xl": "2.5rem",

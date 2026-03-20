@@ -6,25 +6,25 @@
 */
 
 body {
-  background-color: #fdfdfd;
-  color: #0f172a;
+  background-color: #ffffff;
+  color: #1e293b;
   overflow-x: hidden;
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
 /* Custom Design System Components */
 .neumorphic {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.8) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(241, 245, 249, 0.8) 100%);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.4);
   box-shadow: 
-    10px 10px 20px rgba(15, 23, 42, 0.05),
+    10px 10px 20px rgba(30, 41, 59, 0.05),
     -5px -5px 15px rgba(255, 255, 255, 0.8),
     inset 2px 2px 5px rgba(255, 255, 255, 0.5);
 }
 
-.crimson-glow {
-  box-shadow: 0 0 20px rgba(220, 38, 38, 0.2);
+.navy-glow {
+  box-shadow: 0 0 20px rgba(30, 64, 175, 0.2);
 }
 
 .gold-shimmer {
