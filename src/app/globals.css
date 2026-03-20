@@ -68,6 +68,8 @@
   }
 }
 
-.orb {
-  @apply absolute rounded-full blur-[120px] opacity-20 animate-orb mix-blend-multiply;
+@layer utilities {
+  .orb {
+    @apply absolute rounded-full blur-[120px] opacity-20 animate-orb mix-blend-multiply;
+  }
 }
